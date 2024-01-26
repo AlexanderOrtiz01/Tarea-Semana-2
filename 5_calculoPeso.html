@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de peso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="EstilosEjercicio5.css">
+</head>
+<body>
+    
+
+  <h1 style="text-align: center;">Cálculo del peso en diferentes mundos</h1>
+<!--Grupo de Cards-->
+<div class="row row-cols-1 row-cols-md-2 g-4">
+
+   <!--Peso en la tierra-->
+    <div class="col">
+      <div class="card" id="carta">
+        <img src="Gifs\Tierra.gif" class="card-img-top" style="width: 50%; height: 50%;">
+
+        <div class="card-body">
+          <h5 class="card-title">Calcular peso en La Tierra</h5>
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ingrese la masa en Kg</label>
+              <input type="number" class="form-control" id="campoMasaTierra">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="operacion_Tierra()">Calcular</button>
+
+            <div id="alertaTierra" class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>El peso seria de: </strong> <h3 id="respuesta1"></h3> 
+              </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Peso en la luna-->
+    <div class="col">
+      <div class="card" id="carta">
+        <img src="Gifs\Luna.gif" class="card-img-top" style="width: 40%; height: 40%;">
+
+        <div class="card-body">
+          <h5 class="card-title">Calcular peso en La Luna</h5>
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ingrese la masa en Kg</label>
+              <input type="number" class="form-control" id="campoMasaLuna">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="operacion_Luna()">Calcular</button>
+
+            <div id="alertaLuna" class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>El peso seria de: </strong> <h3 id="respuesta2"></h3> 
+              </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Peso en marte-->
+    <div class="col">
+      <div class="card" id="carta">
+        <img src="Gifs\Marte.gif" class="card-img-top" style="width: 50%; height: 50%;">
+
+        <div class="card-body">
+          <h5 class="card-title">Calcular peso en Marte</h5>
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ingrese la masa en Kg</label>
+              <input type="number" class="form-control" id="campoMasaMarte">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="operacion_Marte()">Calcular</button>
+
+            <div id="alertaMarte" class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>El peso seria de: </strong> <h3 id="respuesta3"></h3> 
+              </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Peso en la mercurio-->
+    <div class="col">
+      <div class="card" id="carta">
+        <img src="Gifs\Mercurio.gif" class="card-img-top" style="width: 60%; height: 60%;">
+
+        <div class="card-body">
+          <h5 class="card-title">Calcular peso en Mercurio</h5>
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Ingrese la masa en Kg</label>
+              <input type="number" class="form-control" id="campoMasaMercurio">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="operacion_Mercurio()">Calcular</button>
+
+            <div id="alertaMercurio" class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>El peso seria de: </strong> <h3 id="respuesta4"></h3> 
+              </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="5_calculoPeso.js"></script>
+
+</body>
+</html>
